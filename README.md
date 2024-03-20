@@ -5,13 +5,19 @@ How To Install And Run?
 
 in cmd do 
 
-git clone https://github.com/skyliner1123/SnapChatBruteForce.git
+1. cd Desktop
 
-run "install.bat"
+then
+
+2. git clone https://github.com/skyliner1123/SnapChatBruteForce.git
+
+then go into SnapChatBruteForce
+
+3. and run "install.bat"
 
 once it says "Install Complete"
 
-Finally run FloatTool.exe
+4. Finally run FloatTool.exe
 
 and have fun cracking snapchat account!
 
