@@ -1,7 +1,7 @@
 # Snap-Chat-Brute-Force
-A Simple Tool Mainly Made To Try 10M Passwords On An Entered Username
+# A Simple Tool Mainly Made To Try 10M Passwords On An Entered Username
 
-How To Install And Run?
+# How To Install And Run?
 
 in cmd
 
@@ -13,9 +13,7 @@ in cmd
 
 4. once it says "Install Complete" Finally run FloatTool.exe
 
-and have fun cracking snapchat account!
-
-Boom, Goodluck Cracking Them Snap Account's
+# Boom, Goodluck Cracking Them Snap Account's
 
 
 ![image](https://github.com/skyliner1123/SnapChatBruteForce/assets/103896565/369fedc5-881d-46ed-9fad-201755d3e4ef)
