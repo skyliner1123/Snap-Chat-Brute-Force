@@ -3,21 +3,15 @@ A Simple Tool Mainly Made To Try 10M Passwords On An Entered Username
 
 How To Install And Run?
 
-in cmd do 
+in cmd
 
 1. cd Desktop
 
-then
-
 2. git clone https://github.com/skyliner1123/SnapChatBruteForce.git
 
-then go into SnapChatBruteForce
+3. then go into SnapChatBruteForce and run "install.bat"
 
-3. and run "install.bat"
-
-once it says "Install Complete"
-
-4. Finally run FloatTool.exe
+4. once it says "Install Complete" Finally run FloatTool.exe
 
 and have fun cracking snapchat account!
 
