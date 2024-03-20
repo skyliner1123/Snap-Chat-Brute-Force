@@ -1,4 +1,4 @@
-# SnapChatBruteForce
+# Snap-Chat-Brute-Force
 A Simple Tool Mainly Made To Try 10M Passwords On An Entered Username
 
 How To Install And Run?
